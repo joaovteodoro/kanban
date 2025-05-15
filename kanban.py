@@ -1,5 +1,6 @@
 import sys
-from PySide6 import QtCore, QtWidgets, QtGui
+from PySide6 import  QtWidgets
+
 
 class MyWidget(QtWidgets.QWidget):
     def __init__(self):
@@ -19,6 +20,11 @@ class MyWidget(QtWidgets.QWidget):
         self.lista_fazendo = QtWidgets.QListWidget()
         self.lista_feito = QtWidgets.QListWidget()
 
+        # DEFININDO AS CORES DE FUNDO
+        self.lista_a_fazer.setStyleSheet("background-color: #ff6961;")
+        self.lista_fazendo.setStyleSheet("background-color: #fdfd96;") 
+        self.lista_feito.setStyleSheet("background-color: #77dd77;")   
+
         #CONECTANDO O CLIQUE DOS ITENS À FUNÇÕES DE SELEÇÃO
         self.lista_a_fazer.itemClicked.connect (self.selecionando_a_fazer) #ItemClicked seleciona o botão clicado
         self.lista_fazendo.itemClicked.connect (self.selecionando_fazendo) 
@@ -33,6 +39,11 @@ class MyWidget(QtWidgets.QWidget):
         self.button_fazendo = QtWidgets.QPushButton("Fazendo")
         self.button_feito = QtWidgets.QPushButton("Feito") 
 
+        # DEFINIR CORES PARA OS BOTÔES
+        self.button_fazer.setStyleSheet("background-color: #8B0000; color: white;")   # Vermelho escuro
+        self.button_fazendo.setStyleSheet("background-color: #B8860B; color: white;") # Amarelo escuro
+        self.button_feito.setStyleSheet("background-color: #013220; color: white;")   # Verde muito escuro
+
         # ADICIONANDO OS BOTÕES AO LAYOUT LINHAS_BOTOES
         layout_botoes.addWidget(self.button_fazer)
         layout_botoes.addWidget(self.button_fazendo)
@@ -46,7 +57,7 @@ class MyWidget(QtWidgets.QWidget):
         # ADICIONANDO AS DUAS LINHAS AO LAYOUT PRINCIPAL
         layout_principal.addLayout(layout_listas) #para adicionar layout, não é addWidget, e sim adicionar layout
         layout_principal.addLayout(layout_botoes)
-
+    
     #################################
 
     #METODOS DOS BOTÕES
@@ -119,3 +130,7 @@ if __name__ == "__main__":
     janela.adjustSize()
     janela.show()
     app.exit(app.exec())
+
+
+
+
