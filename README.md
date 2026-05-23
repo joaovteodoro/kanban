@@ -9,10 +9,7 @@ Kanban Board é um projeto desktop desenvolvido com Python e PySide6, com o obje
 
 ## ORGANIZAÇÃO DO CÓDIGO
 
-```
-kanban/
-└── main.py
-```
+O código é monolítico, onde toda a lógica está dentro do arquivo main.py
 
 ## INICIANDO O PROGRAMA
 
@@ -30,7 +27,8 @@ kanban/
 
 2. Instale as dependências necessárias:
    ```bash
-   pip install PySide6
+   pip install -r requirements.txt
+
    ```
 
 3. Execute o programa:
