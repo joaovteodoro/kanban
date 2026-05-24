@@ -1,5 +1,7 @@
 # KANBAN BOARD
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+
 Kanban Board é um projeto desktop desenvolvido com Python e PySide6, com o objetivo de organizar tarefas de forma visual utilizando o método Kanban. O software permite gerenciar atividades ao longo de três etapas: **A Fazer**, **Fazendo** e **Feito**.
 
 ## TECNOLOGIAS UTILIZADAS
