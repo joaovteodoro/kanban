@@ -45,3 +45,7 @@ O código é monolítico, onde toda a lógica está dentro do arquivo main.py
 - Movimentação de tarefas de **Fazendo** → **Feito**
 - Numeração automática dos itens em cada lista
 - Cores distintas para cada coluna (vermelho, amarelo e verde)
+
+## LICENÇA
+
+Este projeto é de uso livre. Qualquer pessoa está autorizada a copiar, modificar e distribuir o código.
